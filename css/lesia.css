@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+/*--NAVBAR--*/
+
+.navbar {
+    /*width: 1200px;*/
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar a {
+    color: blue;
+    text-decoration: none;
+    font-family: "Arial";
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: orange;
+}
+
+.navbar a.currentpage {
+    color: orange;
+}
+
+
+
+/* TITRE */
+
+.titre h1 {
+    font-family: "Arial";
+    font-size: 3.5em;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+
+
+/* SECTION 1 */
+
+.sec1 {
+    position: relative;
+    width: 75%;
+    margin: 2% auto;
+    background-color: #353448;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 45px 10px #fec675;
+    animation: shadow 5s infinite ease-in-out;
+    height: 420px;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0px 0px 45px 30px #fec675;
+    }
+    20% {
+        box-shadow: 0px 0px 45px 0px #fec675;
+    }
+    40% {
+        box-shadow: 0px 0px 45px 15px #fec675;
+    }
+    70% {
+        box-shadow: 0px 0px 45px -10px #fec675;
+    }
+    100% {
+        box-shadow: 0px 0px 45px 30px #fec675;
+    }
+}
+
+.sec1 .arrow::before {
+    content: "\f107";
+    font-family: "FontAwesome";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #fec675;
+    border-radius: 50px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2.5em;
+    color: black;
+}
+
+.sec1 .left {
+    margin-right: 80px;
+}
+
+.sec1 .left img {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 45px 10px black;
+    user-select: none;
+}
+
+.sec1 .right {
+    max-width: 500px;
+}
+
+.sec1 .right h4 {
+    color: #fec675;
+    letter-spacing: 2px;
+    font-family: "Arial";
+}
+
+.sec1 .right h1 {
+    color: white;
+    font-size: 5em;
+    font-family: "Arial";
+    text-shadow: 0px 0px 10px white;
+}
+
+.sec1 .right p {
+    color: #b1b1b1;
+    line-break: anywhere;
+    font-family: "Verdana";
+}
+
+.sec1 .right a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 15px 0 5px 15px;
+    font-family: "Verdana";
+    color: #b1b1b1;
+    transition: 0.3s;
+}
+
+.sec1 .right a:hover {
+    color: #fec675;
+}
+
+
+
+/* SECTION 2 */
+
+#aced {
+    margin-top: 65px;
+}
+
+.sec2 {
+    margin-top: 5em;
+}
+
+.sec2 p {
+    font-family: "Verdana";
+    font-size: 16px;
+    color: #888888;
+    margin: 20px 5%;
+}
+
+.sec2 span {
+    color: #4a8be9;
+    text-shadow: 0px 0px 10px #4a8be9;
+}
+
+.sec2 ul.ulced {
+    font-family: "Verdana";
+    font-size: 16px;
+    color: #888888;
+    margin-left: 120px;
+}
+
+
+
+/* SECTION 3 */
+
+#adda {
+    margin-top: 65px;
+}
+
+.sec3 {
+    margin-top: 5em;
+}
+
+.sec3 p {
+    font-family: "Verdana";
+    font-size: 16px;
+    color: #888888;
+    margin: 20px 5%;
+}
+
+.sec3 span {
+    color: #4a8be9;
+    text-shadow: 0px 0px 10px #4a8be9;
+}
+
+.sec3 ul {
+    font-family: "Verdana";
+    font-size: 16px;
+    color: #888888;
+    margin-left: 120px;
+}
+
+
+
+/* SECTION 4 */
+
+#arglmt {
+    margin-top: 65px;
+}
+
+.sec4 {
+    margin-top: 5em;
+}
+
+.sec4 p {
+    font-family: "Verdana";
+    font-size: 16px;
+    color: #888888;
+    margin: 20px 5%;
+}
+
+.sec4 span {
+    color: #4a8be9;
+    text-shadow: 0px 0px 10px #4a8be9;
+}
+
+.sec4 ul {
+    font-family: "Verdana";
+    font-size: 16px;
+    color: #888888;
+    margin-left: 120px;
+}
+
+
+
+/*--FOOTER--*/
+
+footer {
+    margin-top: 60px;
+    min-height: 50px;
+    background-color: #353448;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    font-family: "Arial";
+    color: #999999;
+    text-align: center;
+}
